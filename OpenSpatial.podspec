@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OpenSpatial"
-  s.version      = "1.1"
+  s.version      = "1.2"
   s.summary      = "A short description of OpenSpatial."
 
   s.description  = <<-DESC
@@ -62,8 +62,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platforms = {:ios => "8.0", :osx => "10.10" }
 
   #  When using multiple platforms
   # s.ios.deployment_target = "8.0"
@@ -76,7 +75,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/Plumzi/openspatial-iOS-SDK.git", :tag => "1.1" }
+  s.source       = { :git => "https://github.com/Plumzi/openspatial-iOS-SDK.git", :tag => "1.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
