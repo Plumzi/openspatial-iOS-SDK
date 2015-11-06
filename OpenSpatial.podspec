@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OpenSpatial"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "A short description of OpenSpatial."
 
   s.description  = <<-DESC
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
                    * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
-  s.homepage     = "http://EXAMPLE/OpenSpatial"
+  s.homepage     = "https://dev.nod.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,9 +39,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "Apache License, Version 2.0"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
+  s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE.md" }
+  
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the authors of the library, with email addresses. Email addresses
@@ -64,11 +63,11 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
+  # s.ios.deployment_target = "8.0"
+  # s.osx.deployment_target = "10.10"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -77,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://github.com/Plumzi/openspatial-iOS-SDK.git", :tag => "1.0" }
+  s.source       = { :git => "https://github.com/Plumzi/openspatial-iOS-SDK.git", :tag => "1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,7 +87,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  framework_src_path = "Open Spatial iOS Framework/OpenSpatial"
+  framework_src_path = "Framework/OpenSpatial"
   # framework_path = "Open Spatial iOS Framework/OpenSpatial/_Archive/Release"
   s.source_files  = "#{framework_src_path}/OpenSpatial/*.{h,m}"
   # s.exclude_files = ""
